@@ -3,13 +3,16 @@ package myfirstpackage;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Student implements Serializable {
+	Student(String comment){ 
+		 System.out.println(comment );
+		 }
 
 	//transient Scanner sc = new Scanner(System.in);
 String studentName;
 int studentId;
+private String studentEmail;
 
 
 
@@ -18,17 +21,7 @@ ArrayList<Subject> listSubject = new ArrayList<>();
 
 ArrayList<Student> listStudent = new ArrayList<>();
 
-/*
- * public void studentDetails1() {
- * 
- * Student myStudent = new Student(); System.out.println("Enter student name");
- * String studentName = sc.next(); myStudent.setstudentName(studentName);
- * 
- * System.out.println("Enter student ID"); int studentId = sc.nextInt();
- * myStudent.setstudentId(studentId);
- * 
- * }
- */
+
 
 /// getters and setters
 
@@ -64,9 +57,16 @@ return listSubject;
 
 }
 
-public void studentDetails() {
-// TODO Auto-generated method stub
-
+public String getStudentEmail() {
+	return studentEmail;
 }
+
+public void setStudentEmail(String studentEmail) {
+	this.studentEmail = studentEmail;
+}
+
+
+
+
 
 }
