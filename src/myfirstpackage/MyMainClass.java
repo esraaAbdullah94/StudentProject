@@ -15,10 +15,10 @@ import java.io.ObjectOutputStream;
 public class MyMainClass {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
-		Student student = new Student("Student Registration");
-		
+		//Student student = new Student("Student Registration");
+		School school = new School();
 	
-		
+		school.age();
 		/*
 		 * try { Student myStudent = new Student();
 		 * 

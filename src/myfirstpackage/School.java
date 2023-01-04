@@ -1,10 +1,12 @@
 package myfirstpackage;
 import java.util.*;
 
-public class School {
+public class School implements StudentRegistiration {
 
 Scanner sc = new Scanner(System.in);
-
+public void age() {
+	System.out.println("Age must be Above 18");
+}
 String schoolName;
 
 ArrayList<School> schoolList = new ArrayList<>();
